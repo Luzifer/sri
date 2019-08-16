@@ -69,7 +69,7 @@ func main() {
 }
 
 func sriIntegrity(url string) (string, error) {
-	resp, err := http.Get(url)
+	resp, err := http.Get(url) //#nosec G107 -- The while intention of this tool is to download files
 	if err != nil {
 		return "", errors.Wrap(err, "Unable to get URL contents")
 	}
