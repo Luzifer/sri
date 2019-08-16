@@ -23,7 +23,7 @@ var (
 	}{}
 
 	htmlTemplate = map[string]string{
-		"link":   `<link href=%q integrity=%q crossorigin="anonymous">`,
+		"link":   `<link rel="stylesheet" href=%q integrity=%q crossorigin="anonymous">`,
 		"script": `<script src=%q integrity=%q></script>`,
 	}
 
